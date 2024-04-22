@@ -1,0 +1,21 @@
+.who{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.who-left{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    padding: 20px;
+}
+.who-right{
+    display: flex;
+    flex-direction: column;
+        text-align: justify;
+
+    gap: 20px;
+    padding: 20px;
+}
