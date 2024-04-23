@@ -9,6 +9,7 @@ import Forget from "./Pages/Forget-page/forget";
 import Signup from "./Pages/Signup-page/signup";
 import Spman from "./Pages/Signup-page-spman/signup";
 import Who from "./Pages/Who/who";
+import Verify from "./Pages/Verify-page/verify";
 export default function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/who" element={<Who />} />
         <Route path="/spman" element={<Spman />} />
+        <Route path="/verify" element={<Verify />} />
       </Routes>
     </div>
   );

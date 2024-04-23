@@ -1,0 +1,39 @@
+.verify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+.verify-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.verify-left .inputs {
+  display: flex;
+  gap: 20px;
+}
+.verify-left .inputs Input {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.verify-left Button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.verify-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.verify-right img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}

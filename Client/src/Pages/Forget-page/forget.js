@@ -21,7 +21,9 @@ export default function Forget() {
           <div className="forget-input">
             <Input type="email" placeholder="Email" />
           </div>
-          <Button text="SUBMIT" />
+          <Link to="/verify">
+            <Button text="Submit" />
+          </Link>
           <p style={{ color: "gray" }}>or login with</p>
           <div className="forget-icons">
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
