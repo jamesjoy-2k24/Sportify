@@ -1,0 +1,7 @@
+.about-title {
+  font-size: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
