@@ -1,5 +1,6 @@
 .who{
     display: flex;
+    height: 100vh;
     justify-content: space-around;
     align-items: center;
     padding: 20px;

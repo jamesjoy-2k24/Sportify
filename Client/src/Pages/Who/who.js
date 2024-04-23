@@ -7,10 +7,9 @@ import Button from "../../Components/Button/button";
 export default function Who() {
   return (
     <div>
-      <Navbar />
       <div className="who">
         <h1>Who are You?</h1>
-        <div className="who-left">
+        <div className="who-left"> 
           <Link to={"/signup"}>
             <Button text="Sponsors" />
           </Link>
