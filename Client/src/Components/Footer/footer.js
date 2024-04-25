@@ -37,18 +37,7 @@ export default function Footer() {
               Facebook
             </Link>
           </div>
-          <div className="instagram">
-            <i class="fab fa-instagram"></i>
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Instagram
-            </Link>
-          </div>
-          <div className="twitter">
-            <i class="fab fa-twitter"></i>
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Twitter
-            </Link>
-          </div>
+
           <div className="github">
             <i class="fab fa-github"></i>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
