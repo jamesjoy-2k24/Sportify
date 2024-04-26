@@ -8,34 +8,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 1;
-  padding: 0 20px; /* Increase padding for better spacing */
+  padding: 0 50px;
   position: sticky;
-  top: 0; /* Stick the nav to the top of the viewport */
-  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.4);
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Add a background color with some transparency */
-  backdrop-filter: blur(10px);
+  top: 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
 }
 
 .nav .nav-logo {
   font-weight: 500;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .nav-links {
   display: flex;
-  gap: 30px; /* Increase the gap for better readability */
+  gap: 60px;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-links a {
+  font-size: 16px;
   text-decoration: none;
   color: black;
   position: relative;
@@ -55,6 +52,7 @@
 .nav-links a:hover::before,
 .nav-links a.active::before {
   width: 100%;
+
 }
 
 .nav-button {
@@ -66,7 +64,7 @@
 .menu-icon {
   cursor: pointer;
   display: none;
-  font-size: 20px;
+  font-size: 25px;
   transition: transform 0.3s ease;
 }
 
@@ -85,12 +83,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: rgba(
-      255,
-      255,
-      255,
-      0.8
-    ); /* Add background color to the mobile nav */
+    background-color: transparent;
   }
 
   .nav.open .nav-links {
@@ -99,11 +92,16 @@
     gap: 20px;
     align-items: center;
     width: 100%;
+    padding: 20px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
   }
   .nav.open .nav-button {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .menu-icon {

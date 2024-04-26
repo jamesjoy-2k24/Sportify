@@ -1,9 +1,11 @@
 .about-page {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  padding: 60px;
+  padding: 40px;
+  padding-top: 80px;
 }
 
 .about-page h1 {
@@ -21,6 +23,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 600px;
 }
 .about-page .right-para p,
@@ -30,7 +34,10 @@
   font-size: 18px;
   text-align: justify;
 }
-
+.right-para Button {
+  margin-top: 1rem;
+  width: 150px;
+}
 .about-page ul {
   margin-bottom: 20px;
 }
@@ -43,7 +50,9 @@
 }
 .first-part,
 .second-part {
+  margin-top: 2rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
 }
@@ -63,13 +72,7 @@
   object-fit: cover;
 }
 
-/* Responsive Design */
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .about-page {
-    padding: 10px;
-  }
-
+@media (max-width: 800px) {
   .about-page h1 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -82,7 +85,7 @@
   .about-page .right-para,
   .about-page .left-para {
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .about-page .right-para p,

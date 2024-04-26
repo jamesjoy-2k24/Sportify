@@ -14,8 +14,17 @@ export default function Login() {
       <div className="login-container">
         <div className="login-form">
           <div className="login-left">
-            <h1 style={{ "textAlign": "center", "marginBottom": "1rem" }}>Login</h1>
-            <p style={{ "marginBottom": "1rem", "color":"black", "fontWeight":"500", "fontSize":"18px" }}>Login to access your account</p>
+            <h1 style={{ textAlign: "center", marginBottom: "1rem" }}>Login</h1>
+            <p
+              style={{
+                marginBottom: "1rem",
+                color: "black",
+                fontWeight: "500",
+                fontSize: "18px",
+              }}
+            >
+              Login to access your account
+            </p>
 
             <div className="login-input-group">
               <Input type="email" placeholder="Email" />
@@ -25,9 +34,7 @@ export default function Login() {
             <div className="login-options">
               <div className="remember">
                 <Input type="checkbox" />
-                <label style={{ "marginLeft": "10px", }}>
-                  Remember me
-                </label>
+                <label style={{ marginLeft: "10px" }}>Remember me</label>
               </div>
               <Link className="forgot-password" to="/forget">
                 Forget Password?
@@ -49,16 +56,15 @@ export default function Login() {
 
             <div className="social-login">
               <Link className="google-login" to="/">
-                <i className="fab fa-google" style={{ "color": "black" }}></i>
+                <i className="fab fa-google" style={{ color: "black" }}></i>
               </Link>
               <Link className="facebook-login" to="/">
-                <i className="fab fa-facebook" style={{ "color": "black" }}></i>
+                <i className="fab fa-facebook" style={{ color: "black" }}></i>
               </Link>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   );
 }
