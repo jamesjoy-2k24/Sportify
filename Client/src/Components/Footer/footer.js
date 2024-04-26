@@ -33,14 +33,14 @@ export default function Footer() {
         <div className="footer-social-icons">
           <div className="facebook">
             <i class="fab fa-facebook"></i>
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
               Facebook
             </Link>
           </div>
 
           <div className="github">
             <i class="fab fa-github"></i>
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
               GitHub
             </Link>
           </div>
@@ -49,25 +49,25 @@ export default function Footer() {
       <div className="footer-content">
         <h1>Content</h1>
         <div className="footer-content-links">
-          <Link style={{ textDecoration: "none", color: "black" }} to="/">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/">
             Home
           </Link>
-          <Link style={{ textDecoration: "none", color: "black" }} to="/shop">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/shop">
             Shop
           </Link>
-          <Link style={{ textDecoration: "none", color: "black" }} to="/about">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/about">
             About
           </Link>
           <Link
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "white" }}
             to="/contact"
           >
             Contact
           </Link>
-          <Link style={{ textDecoration: "none", color: "black" }} to="/login">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/login">
             Login
           </Link>
-          <Link style={{ textDecoration: "none", color: "black" }} to="/signup">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/signup">
             Signup
           </Link>
         </div>

@@ -1,7 +1,120 @@
-.about-title {
-  font-size: 50px;
-  height: 100vh;
+.about-page {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
+  padding: 60px;
+}
+
+.about-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-page h2 {
+  font-size: 24px;
+}
+
+.about-page .right-para,
+.about-page .left-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+.about-page .right-para p,
+.about-page .left-para p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.about-page ul {
+  margin-bottom: 20px;
+}
+
+.about-page ul li {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+.first-part,
+.second-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.second-part {
+  margin-top: 5rem;
+}
+
+.about-page .first-part .left-img img,
+.about-page .second-part .right-img img {
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.about-page .second-part .right-img img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-page {
+    padding: 10px;
+  }
+
+  .about-page h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .about-page h2 {
+    font-size: 22px;
+  }
+
+  .about-page .right-para,
+  .about-page .left-para {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .about-page .right-para p,
+  .about-page .left-para p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .about-page ul li {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .first-part,
+  .second-part {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-page .first-part .left-img img,
+  .about-page .second-part .right-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .about-page .second-part .right-img img {
+    height: auto;
+    max-height: 300px;
+  }
 }

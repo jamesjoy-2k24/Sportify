@@ -3,28 +3,110 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
   width: 100%;
   z-index: 1;
-  padding: 0 10px;
-  position: fixed;
+  padding: 0 20px; /* Increase padding for better spacing */
+  position: sticky;
+  top: 0; /* Stick the nav to the top of the viewport */
   box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.4);
-  background: transparent;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Add a background color with some transparency */
   backdrop-filter: blur(10px);
 }
-.nav-logo {
+
+.nav .nav-logo {
   font-weight: 500;
   font-size: 20px;
 }
+
 .nav-links {
   display: flex;
-  gap: 60px;
+  gap: 30px; /* Increase the gap for better readability */
+  align-items: center;
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before,
+.nav-links a.active::before {
+  width: 100%;
+}
+
 .nav-button {
-  gap: 10px;
   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 850px) {
+  .nav-links,
+  .nav-button {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); /* Add background color to the mobile nav */
+  }
+
+  .nav.open .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .nav.open .nav-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }

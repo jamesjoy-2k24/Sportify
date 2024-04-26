@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <div>
       <div className="login-img">
-        <img src={Photo} alt="Login-image" />
+        <img src={Photo} alt="Login-background" />
       </div>
       <div className="login-container">
         <div className="login-form">

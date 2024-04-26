@@ -4,8 +4,6 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/nav";
 import Home from "./Pages/Home-page/home";
-import About from "./Pages/About-page/about";
-import Contact from "./Pages/Contact-page/contact";
 import Faqs from "./Pages/Faq-page/faq";
 import Shop from "./Pages/Shop-page/shop";
 import Login from "./Pages/Login-page/login";
@@ -20,8 +18,6 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />

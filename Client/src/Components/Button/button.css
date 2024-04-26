@@ -1,7 +1,7 @@
 .button {
-  background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(0, 144, 117));
-  color: #000000;
-  font-weight: 600;
+  background: -webkit-linear-gradient(90deg, #000000, #001aff);
+  color: white;
+  font-weight: 700;
   font-size: 1rem;
   padding: 8px 10px;
   width: 100px;
@@ -12,6 +12,6 @@
 .button:hover {
   transition: all 0.6s;
   background: black;
-  color: #ffffff;
+  color: aqua;
   cursor: pointer;
 }
