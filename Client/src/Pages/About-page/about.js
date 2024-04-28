@@ -43,10 +43,7 @@ const AboutPage = () => {
               <li>Intuitive Interface</li>
             </ul>
           </div>
-          <div className="right-img">
-            <img src={PhotoRight} alt="about"
-            />
-          </div>
+
       </div>
     </div>
   );

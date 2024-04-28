@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/nav";
+import Contact from "./Pages/Contact-page/contact";
 import Home from "./Pages/Home-page/home";
 import Faqs from "./Pages/Faq-page/faq";
 import Shop from "./Pages/Shop-page/shop";
@@ -18,6 +19,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />

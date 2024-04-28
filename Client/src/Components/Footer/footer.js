@@ -55,9 +55,6 @@ export default function Footer() {
           <Link style={{ textDecoration: "none", color: "white" }} to="/shop">
             Shop
           </Link>
-          <Link style={{ textDecoration: "none", color: "white" }} to="/about">
-            About
-          </Link>
           <Link
             style={{ textDecoration: "none", color: "white" }}
             to="/contact"
@@ -66,9 +63,6 @@ export default function Footer() {
           </Link>
           <Link style={{ textDecoration: "none", color: "white" }} to="/login">
             Login
-          </Link>
-          <Link style={{ textDecoration: "none", color: "white" }} to="/signup">
-            Signup
           </Link>
         </div>
       </div>

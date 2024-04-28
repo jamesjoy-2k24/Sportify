@@ -60,17 +60,12 @@
   margin-top: 5rem;
 }
 
-.about-page .first-part .left-img img,
-.about-page .second-part .right-img img {
+.about-page .first-part .left-img img{
   width: 600px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
-.about-page .second-part .right-img img {
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-}
+
 
 @media (max-width: 800px) {
   .about-page h1 {
@@ -109,15 +104,10 @@
     gap: 2rem;
   }
 
-  .about-page .first-part .left-img img,
-  .about-page .second-part .right-img img {
+  .about-page .first-part .left-img img{
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 
-  .about-page .second-part .right-img img {
-    height: auto;
-    max-height: 300px;
-  }
 }

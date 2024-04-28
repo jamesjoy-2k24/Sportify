@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import Button from "../Button/button";
 import "./nav.css";
 
@@ -59,8 +59,8 @@ export default function Navbar() {
         >
           About
         </ScrollLink>
-        <ScrollLink
-          to="contact-section"
+        <NavLink
+          to="/contact"
           smooth={true}
           duration={800}
           onClick={closeMenu}
@@ -68,7 +68,7 @@ export default function Navbar() {
           tabIndex="0"
         >
           Contact
-        </ScrollLink>
+        </NavLink>
         <NavLink to="/shop" onClick={closeMenu} role="button" tabIndex="0">
           Shop
         </NavLink>
