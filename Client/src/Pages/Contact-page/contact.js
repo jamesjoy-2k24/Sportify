@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./contact.css";
 import Input from "../../Components/Input/input";
 import Button from "../../Components/Button/button";
-// import { Link } from "react-router-dom";
 import ContactPhoto from "../../Assets/bg.jpg";
+import Logo from "../../Assets/logo.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -32,6 +32,8 @@ export default function Contact() {
       subject: "",
       message: "",
     });
+
+    alert("Form submitted successfully!");
   };
 
   return (
@@ -41,6 +43,9 @@ export default function Contact() {
       </div>
       <div className="contact-form">
         <div className="contact-left">
+          <div className="contact-logo">
+            <img src={Logo} alt="logo" />
+          </div>
           <h1>Contact Us</h1>
           <div className="contact-icon">
             <div className="first">

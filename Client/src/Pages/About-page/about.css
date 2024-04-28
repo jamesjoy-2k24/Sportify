@@ -4,68 +4,88 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  padding: 40px;
   padding-top: 80px;
 }
 
 .about-page h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
 .about-page h2 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
-.about-page .right-para,
-.about-page .left-para {
+.about-page .right-para {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-left: auto;
-  margin-right: auto; */
+  gap: 10px;
   width: 600px;
 }
-.about-page .right-para p,
-.about-page .left-para p {
+.about-page .right-para p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 18px;
   text-align: justify;
+  font-size: 20px;
+  line-height: 28px;
 }
 .right-para Button {
-  margin-top: 1rem;
+  height: 40px;
   width: 150px;
 }
-.about-page ul {
-  margin-bottom: 20px;
-}
-
-.about-page ul li {
-  font-size: 18px;
-  margin-left: 20px;
-  margin-top: 1rem;
-  line-height: 2rem;
-}
-.first-part,
-.second-part {
+.first-part {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
-}
-.second-part {
-  margin-top: 5rem;
+  gap: 8rem;
 }
 
-.about-page .first-part .left-img img{
+.about-page .first-part .left-img img {
   width: 600px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 4px 18px 0 rgba(0, 0, 0, 0.4),
+    0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.second-part {
+  padding: 40px;
+  margin-top: 5rem;
+}
+.second-part h2 {
+  font-size: 50px;
+  text-align: center;
 }
 
+.features {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+}
+.feature-list {
+  text-align: center;
+  background: #f3f3f3;
+  border: 1px solid #d8d3d3;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 4rem;
+  border-radius: 20px;
+  transition: all 0.6s;
+}
+
+.feature-list p {
+  font-size: 20px;
+}
+.features .feature-list img {
+  width: 200px;
+}
+@media (max-width: 1400px) {
+  .features {
+    flex-wrap: wrap;
+  }
+}
 
 @media (max-width: 800px) {
   .about-page h1 {
@@ -77,14 +97,12 @@
     font-size: 22px;
   }
 
-  .about-page .right-para,
-  .about-page .left-para {
+  .about-page .right-para {
     width: 100%;
     align-items: center;
   }
 
-  .about-page .right-para p,
-  .about-page .left-para p {
+  .about-page .right-para p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 16px;
@@ -98,16 +116,42 @@
     line-height: 1.8rem;
   }
 
-  .first-part,
-  .second-part {
+  .first-part {
     flex-direction: column;
     gap: 2rem;
   }
 
-  .about-page .first-part .left-img img{
+  .about-page .first-part .left-img img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
+}
+.about-page,
+.about-page h1,
+.about-page h2,
+.about-page p,
+.about-page .right-para,
+.about-page .feature-list {
+  transition: opacity 2.5s ease, transform 3s ease;
+}
 
+.about-page,
+.about-page h1,
+.about-page h2,
+.about-page p,
+.about-page .right-para,
+.about-page .feature-list {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.about-page.in-view,
+.about-page.in-view h1,
+.about-page.in-view h2,
+.about-page.in-view p,
+.about-page.in-view .right-para,
+.about-page.in-view .feature-list {
+  opacity: 1;
+  transform: translateX(0);
 }

@@ -1,18 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Button/button";
 import PhotoLeft from "../../Assets/about-left.jpg";
-import PhotoRight from "../../Assets/about-right.jpg";
+import feature1 from "../../Assets/features/feature1.svg";
+import feature2 from "../../Assets/features/feature2.svg";
+import feature3 from "../../Assets/features/feature3.svg";
+import feature4 from "../../Assets/features/feature4.svg";
 import "./about.css";
 
 const AboutPage = () => {
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutPage = document.querySelector(".about-page");
+      const scrollPosition = window.scrollY + window.innerHeight;
+
+      if (aboutPage.offsetTop < scrollPosition) {
+        setInView(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="about-page">
+    <div className={`about-page ${inView ? "in-view" : ""}`}>
       <h1>About Us</h1>
       <div className="first-part">
         <div className="left-img">
-          <img src={PhotoLeft} alt="about"
-          />
+          <img src={PhotoLeft} alt="about" />
         </div>
         <div className="right-para">
           <h2>Who We Are:</h2>
@@ -28,22 +49,31 @@ const AboutPage = () => {
             field.
           </p>
 
-          <Link to="/signup">
+          <Link to="/who">
             <Button text="Get Started" />
           </Link>
         </div>
       </div>
       <div className="second-part">
-          <div className="left-para">
-          <h2>Key Features:</h2>
-            <ul>
-              <li>Comprehensive Player Profiles</li>
-              <li>Advanced Player Search</li>
-              <li>Filtering Options</li>
-              <li>Intuitive Interface</li>
-            </ul>
+        <h2>Key Features</h2>
+        <div className="features">
+          <div className="feature-list">
+            <img src={feature1} alt="feature" />
+            <p>A lot of Player Profiles</p>
           </div>
-
+          <div className="feature-list">
+            <img src={feature2} alt="feature" />
+            <p>Intuitive Player Search</p>
+          </div>
+          <div className="feature-list">
+            <img src={feature3} alt="feature" />
+            <p>Advanced Filtering Options</p>
+          </div>
+          <div className="feature-list">
+            <img src={feature4} alt="feature" />
+            <p>Easy Access to Player Profiles</p>
+          </div>
+        </div>
       </div>
     </div>
   );

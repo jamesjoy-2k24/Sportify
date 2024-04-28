@@ -39,9 +39,9 @@ export default function Footer() {
           </div>
 
           <div className="github">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
-              GitHub
+              Instagram
             </Link>
           </div>
         </div>

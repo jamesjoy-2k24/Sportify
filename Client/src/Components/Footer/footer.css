@@ -21,6 +21,12 @@
   flex-direction: column;
   gap: 20px;
 }
+.get-touch,
+.footer-social,
+.footer-content,
+.footer-input {
+  margin-top: 1rem;
+}
 
 .get-touch-icons,
 .footer-social-icons,
