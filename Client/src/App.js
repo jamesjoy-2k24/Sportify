@@ -1,7 +1,7 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/nav";
 import Admin from "./Pages/Admin-page/admin";
 import Contact from "./Pages/Contact-page/contact";
@@ -14,7 +14,8 @@ import Signup from "./Pages/Signup-page/signup";
 import Spman from "./Pages/Signup-page-spman/signup";
 import Who from "./Pages/Who/who";
 import Verify from "./Pages/Verify-page/verify";
-export default function App() {
+
+function App() {
   return (
     <div>
       <Navbar />
@@ -34,3 +35,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

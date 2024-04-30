@@ -17,20 +17,13 @@ export default function Navbar() {
     setMenuOpen(false);
   };
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about-section");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-      closeMenu();
-    }
-  };
 
   return (
     <nav className={`nav ${menuOpen ? "open" : ""}`}>
       <div className="nav-logo">
         <ScrollLink
           to="home-section"
-          smooth={true}
+          smooth="true"
           duration={800}
           onClick={closeMenu}
           role="button"
@@ -43,7 +36,7 @@ export default function Navbar() {
         <NavLink
           to="/"
           onClick={closeMenu}
-          activeClassName="active"
+          activeclassname="active"
           role="button"
           tabIndex="0"
         >
@@ -51,7 +44,7 @@ export default function Navbar() {
         </NavLink>
         <ScrollLink
           to="about-section"
-          smooth={true}
+          smooth="true"
           duration={800}
           onClick={closeMenu}
           role="button"
@@ -61,7 +54,7 @@ export default function Navbar() {
         </ScrollLink>
         <NavLink
           to="/contact"
-          smooth={true}
+          smooth="true"
           duration={800}
           onClick={closeMenu}
           role="button"

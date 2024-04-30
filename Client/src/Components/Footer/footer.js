@@ -15,15 +15,15 @@ export default function Footer() {
         <h1>Get in touch</h1>
         <div className="get-touch-icons">
           <div className="first">
-            <i class="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <p>2nd cross Street, Vavuniya</p>
           </div>
           <div className="second">
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
             <p>jamesjoy2k24@gmail.com </p>
           </div>
           <div className="third">
-            <i class="fas fa-phone-alt"></i>
+            <i className="fas fa-phone-alt"></i>
             <p>+9477 835 2713</p>
           </div>
         </div>
@@ -32,14 +32,14 @@ export default function Footer() {
         <h1>Our Social Medias</h1>
         <div className="footer-social-icons">
           <div className="facebook">
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
               Facebook
             </Link>
           </div>
 
           <div className="github">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
               Instagram
             </Link>

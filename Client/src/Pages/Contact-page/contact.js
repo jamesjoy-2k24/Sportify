@@ -49,15 +49,15 @@ export default function Contact() {
           <h1>Contact Us</h1>
           <div className="contact-icon">
             <div className="first">
-              <i class="fas fa-map-marker-alt"></i>
+              <i className="fas fa-map-marker-alt"></i>
               <p>2nd cross Street, Vavuniya</p>
             </div>
             <div className="second">
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <p>jamesjoy2k24@gmail.com </p>
             </div>
             <div className="third">
-              <i class="fas fa-phone-alt"></i>
+              <i className="fas fa-phone-alt"></i>
               <p>+9477 835 2713</p>
             </div>
           </div>

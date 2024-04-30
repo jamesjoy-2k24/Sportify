@@ -1,9 +1,5 @@
 require("dotenv").config();
-const express = require("express");
 const mongoose = require("mongoose");
-// const axios = require("axios");
-const cors = require("cors");
-
 const { MONGO_URI } = process.env;
 
 // Database Connection
@@ -18,4 +14,5 @@ const connectDB = async () => {
     console.error("Error connecting to MongoDB:", error);
   }
 };
+
 module.exports = connectDB;

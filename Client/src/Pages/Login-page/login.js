@@ -1,20 +1,21 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
-import { Link } from "react-router-dom";
 import Input from "../../Components/Input/input";
 import Button from "../../Components/Button/button";
 import Photo from "../../Assets/login.jpg";
 
-export default function Login() {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://example.com/api/login", {
+      const response = await fetch("http://localhost:3008/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,18 +24,18 @@ export default function Login() {
       });
 
       if (response.ok) {
-        console.log("Login successful!");
-        setError("");
+        window.location.href = "/admin";
       } else {
         const data = await response.json();
         setError(data.message || "Login failed");
+        alert(data.message || "Login failed");
       }
     } catch (error) {
       console.error("Error during login:", error);
       setError("An unexpected error occurred");
+      alert("An unexpected error occurred");
     }
   };
-
   return (
     <div>
       <div className="login-img">
@@ -54,8 +55,6 @@ export default function Login() {
             >
               Login to access your account
             </p>
-
-            {error && <p style={{ color: "red" }}>{error}</p>}
 
             <form onSubmit={handleSubmit}>
               <div className="login-input-group">
@@ -88,7 +87,7 @@ export default function Login() {
               <div className="signup-option">
                 <p>
                   Don't have an account?{" "}
-                  <Link className="signup-link" to="/who">
+                  <Link className="signup-link" to="/register">
                     Sign up
                   </Link>
                 </p>
@@ -110,4 +109,6 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+
+export default Login;

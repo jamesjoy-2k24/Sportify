@@ -1,17 +1,16 @@
-//import 
-const express = require("express");
-const mongoose = require("mongoose");
-const Admin = require("../Models/Admin.model");
+const AdminModel = require("../Models/Admin.model");
 
-const router = express.Router();
-
-//add admin
-const createAdmin = async (req, res) => {
-    const admin = await Admin.create(req.body);
-    res.json(admin);
+exports.login = async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const admin = await AdminModel.findOne({ email });
+    if (admin && password === admin.password) {
+      res.json(admin);
+    } else {
+      res.status(401).json({ message: "Invalid email or password" });
+    }
+  } catch (error) {
+    console.error("Error during login:", error);
+    res.status(500).json({ message: "An unexpected error occurred" });
+  }
 };
-
-//exports
-module.exports = {
-    createAdmin
-}
