@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./admin.css";
 import Profile from "../../Assets/logo.png";
 import Dashboard from "../Dashboard-page/dashboard"
+import Sponsor from "../Dashboard-page/sponsor";
+import Button from "../../Components/Button/button";
 // import { useLocation } from "react-router-dom";
 
 export default function Admin() {
@@ -64,6 +66,7 @@ export default function Admin() {
             <i className="fa fa-ticket"></i>
             <p>Payments</p>
           </div>
+          <Button text="Logout" />
         </div>
       </div>
       <div className="admin-content">
@@ -72,7 +75,8 @@ export default function Admin() {
           <img src={Profile} alt="profile"></img>
         </div>
         <div className="second-content">
-          <Dashboard />
+          {activeNavItem === "Dashboard" && <Dashboard />}
+          {activeNavItem === "Sponsors" && <Sponsor />}
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
 .admin-sidebar-title {
   text-align: center;
   font-size: 25px;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .admin-sidebar-items {
   display: flex;
@@ -18,6 +18,10 @@
   margin-left: auto;
   margin-top: 2rem;
   gap: 30px;
+}
+.admin-sidebar-items Button {
+  margin-left: auto;
+  margin-right: auto;
 }
 .admin-sidebar-item {
   display: flex;

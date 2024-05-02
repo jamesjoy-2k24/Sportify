@@ -1,6 +1,5 @@
 import "./dashboard.css";
 
-
 export default function Dashboard() {
   return (
     <div className="dashboard">
@@ -10,11 +9,11 @@ export default function Dashboard() {
           Total Sponsors
         </p>
         <p>
-          <span>300</span>
-          Total Sportsmen
+          <span>25</span>
+          Total Subscription
         </p>
         <p>
-          <span>15000LKR</span>
+          <span>10000LKR</span>
           Revenue
         </p>
       </div>
@@ -22,18 +21,10 @@ export default function Dashboard() {
         <table>
           <thead>
             <tr>
-              <th>
-                Name <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </th>
-              <th>
-                Company/ Club <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              </th>
-              <th>
-                Location <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </th>
-              <th>
-                Position <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </th>
+              <th>Name</th>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Subscription</th>
               <th></th>
             </tr>
           </thead>
@@ -42,19 +33,7 @@ export default function Dashboard() {
               <td>Joy</td>
               <td>Growth Agent PLC</td>
               <td>Vavuniya</td>
-              <td>Sponsor</td>
-              <td>
-                <i class="fa fa-edit" aria-hidden="true"></i>
-              </td>
-              <td>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>James</td>
-              <td>Sports Club Jeeva</td>
-              <td>Vavuniya</td>
-              <td>Player</td>
+              <td>Monthly</td>
               <td>
                 <i class="fa fa-edit" aria-hidden="true"></i>
               </td>
@@ -66,19 +45,7 @@ export default function Dashboard() {
               <td>Joy</td>
               <td>Growth Agent PLC</td>
               <td>Vavuniya</td>
-              <td>Sponsor</td>
-              <td>
-                <i class="fa fa-edit" aria-hidden="true"></i>
-              </td>
-              <td>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>James</td>
-              <td>Sports Club Jeeva</td>
-              <td>Vavuniya</td>
-              <td>Player</td>
+              <td>Monthly</td>
               <td>
                 <i class="fa fa-edit" aria-hidden="true"></i>
               </td>
@@ -90,7 +57,7 @@ export default function Dashboard() {
               <td>Joy</td>
               <td>Growth Agent PLC</td>
               <td>Vavuniya</td>
-              <td>Sponsor</td>
+              <td>Monthly</td>
               <td>
                 <i class="fa fa-edit" aria-hidden="true"></i>
               </td>
@@ -99,10 +66,34 @@ export default function Dashboard() {
               </td>
             </tr>
             <tr>
-              <td>James</td>
-              <td>Sports Club Jeeva</td>
+              <td>Joy</td>
+              <td>Growth Agent PLC</td>
               <td>Vavuniya</td>
-              <td>Player</td>
+              <td>Monthly</td>
+              <td>
+                <i class="fa fa-edit" aria-hidden="true"></i>
+              </td>
+              <td>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Joy</td>
+              <td>Growth Agent PLC</td>
+              <td>Vavuniya</td>
+              <td>Monthly</td>
+              <td>
+                <i class="fa fa-edit" aria-hidden="true"></i>
+              </td>
+              <td>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Joy</td>
+              <td>Growth Agent PLC</td>
+              <td>Vavuniya</td>
+              <td>Monthly</td>
               <td>
                 <i class="fa fa-edit" aria-hidden="true"></i>
               </td>

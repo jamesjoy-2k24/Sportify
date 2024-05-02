@@ -1,0 +1,63 @@
+.admin-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.second-content {
+  display: flex;
+  justify-content: space-around;
+}
+.second-content p {
+  margin-top: 3rem;
+  width: 400px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: gray;
+  border-right: 1px solid black;
+  border-color: gray;
+}
+.second-content p span {
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+}
+.third-content {
+  margin-top: 3rem;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+td {
+  margin-top: 1rem;
+  padding: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+}
+td i {
+  cursor: pointer;
+}
+.fourth-content {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fourth-content p {
+  width: 150px;
+  padding: 10px;
+  font-size: 16px;
+}
+.fourth-content .page {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
