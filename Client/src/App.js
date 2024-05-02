@@ -4,6 +4,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Navbar from "./Components/Navbar/nav";
 import Admin from "./Pages/Admin-page/admin";
+import Dashboard from "./Pages/Dashboard-page/dashboard";
+import Sponsor from "./Pages/Sponsor-page/sponsor";
+import Sportman from "./Pages/Spman-page/spman";
 import Contact from "./Pages/Contact-page/contact";
 import Home from "./Pages/Home-page/home";
 import Faqs from "./Pages/Faq-page/faq";
@@ -22,6 +25,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/sponsor" element={<Sponsor />} />
+        <Route path="/sportman" element={<Sportman />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/shop" element={<Shop />} />

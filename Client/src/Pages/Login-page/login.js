@@ -13,9 +13,8 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch("http://localhost:3008/admin/login", {
+      const response = await fetch("http://localhost:3005/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,19 +22,18 @@ const Login = () => {
         body: JSON.stringify({ email, password }),
       });
 
-      if (response.ok) {
-        window.location.href = "/admin";
-      } else {
-        const data = await response.json();
-        setError(data.message || "Login failed");
-        alert(data.message || "Login failed");
+      if (!response.ok) {
+        throw new Error("Failed to login");
       }
+
+      // const data = await response.json();
+      // console.log(data);
+      navigate("/admin");
     } catch (error) {
-      console.error("Error during login:", error);
-      setError("An unexpected error occurred");
-      alert("An unexpected error occurred");
+      setError(error.message);
     }
   };
+
   return (
     <div>
       <div className="login-img">
@@ -70,16 +68,6 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-              </div>
-
-              <div className="login-options">
-                <div className="remember">
-                  <Input type="checkbox" />
-                  <label style={{ marginLeft: "10px" }}>Remember me</label>
-                </div>
-                <Link className="forgot-password" to="/forget">
-                  Forget Password?
-                </Link>
               </div>
 
               <Button text="Login" className="login-button" />

@@ -4,16 +4,16 @@ const connectDB = require("./DB/connectDB");
 const AdminRoutes = require("./Routes/AdminRoutes");
 
 const app = express();
-const PORT = 3008;
+const PORT = 3005;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// Routes CRUD
-app.use("/admin", AdminRoutes.router);
+// Routes
+app.use("/admin", AdminRoutes.router); 
 
-// Error handling for database connection
+//Connect DB
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
