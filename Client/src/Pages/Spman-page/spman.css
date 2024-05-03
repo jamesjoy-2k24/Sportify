@@ -1,0 +1,68 @@
+.sponsor {
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    gap: 10rem;
+}
+.sponsor-sidebar {
+  background-color: #0cbbc7;
+  width: 350px;
+  padding: 20px;
+}
+.sponsor-sidebar-header {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5rem;
+}
+.sponsor-sidebar-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-top: 2rem;
+  gap: 30px;
+}
+.sponsor-sidebar-items Button {
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sponsor-sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  font-size: 20px;
+  background: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.sponsor-sidebar-item:hover {
+  background-color: white;
+  color: #014347;
+  transition: all 0.3s;
+}
+.sponsor-sidebar-item.active {
+  background-color: white;
+  color: #014347;
+}
+.sponsor-profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+.sponsor-content img {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.sponsor-content table, th, tr, td{
+    border: none;
+    text-align: left;
+}
